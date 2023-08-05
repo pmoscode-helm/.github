@@ -1,11 +1,10 @@
 # pmoscode Helm Charts
 
-This organisation will only get Helm charts.
+This organization contains only Helm charts and their dependencies.
 
-Currently, there are three:
+Currently, there are:
 
 - Airsonic-advanced
 - Gotify
 - jDownloader 2
-
-In future there will come more.
+- Axelor Open Suite
