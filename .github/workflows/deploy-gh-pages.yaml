@@ -1,0 +1,41 @@
+name: Deploy GH Pages
+on:
+  push:
+    branches:
+      - main
+      - feature/developer-hub
+    paths:
+      - 'mkdocs.yml'
+      - 'docs/**'
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Set cache id
+        run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+
+      - name: Use cache
+        uses: actions/cache@v3
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: .cache
+          restore-keys: |
+            mkdocs-material-
+
+      - name: Install mkdocs-material and plugins
+        run: pip install mkdocs-material
+
+      - name: Deploy to GH Pages
+        run: mkdocs gh-deploy --force
