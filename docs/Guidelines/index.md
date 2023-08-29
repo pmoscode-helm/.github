@@ -4,7 +4,7 @@
 
 Welcome to pmoscode developer guidelines, known as PDGs. PDG numbers — once assigned — never change, and each PDG deals with special technical topics.
 
-You find the overarching Changelog [here](PDG 0 - Changelog & Drafts) to see when new PDGs have been added.
+You find the overarching Changelog [here](PDG_0_-_Changelog & Drafts) to see when new PDGs have been added.
 
 ## Goal
 

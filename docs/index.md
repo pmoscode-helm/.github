@@ -1,6 +1,6 @@
 # Developer Hub
 
-Welcome to the **Developer Hub** of pmoscode for Helm / Docker image repositories!
+Welcome to the **Developer Hub** of pmoscode for Helm charts / Docker image repositories!
 
 Here you will find all the information
 you need for an uncomplicated contribution in the pmoscode Helm chart organization.
