@@ -1,17 +1,13 @@
-# Welcome to MkDocs
+# Developer Hub
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Welcome to the **Developer Hub** of pmoscode for Helm / Docker image repositories!
 
-## Commands
+Here you will find all the information
+you need for an uncomplicated contribution in the pmoscode Helm chart organization.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Of course, these are not always applicable in all cases.
+For most cases, however,
+they make it easier to process pull requests and help maintain a consolidated repository landscape.
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+This makes it easier for you to understand the structure and elements of the Helm charts
+and to contribute to this organization.
