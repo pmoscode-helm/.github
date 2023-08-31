@@ -1,4 +1,4 @@
-# Template for PDG's
+# PDG 0.1 - Templates
 
 This is the template for new PDG's.
 
