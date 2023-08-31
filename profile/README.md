@@ -8,3 +8,4 @@ Currently, there are:
 - Gotify
 - jDownloader 2
 - Axelor Open Suite
+- Excalidraw
