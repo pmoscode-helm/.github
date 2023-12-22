@@ -1,0 +1,76 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+site_name: Developer Hub
+
+#custom_dir: overrides
+
+theme:
+  name: material
+  logo: assets/logo-icon-round-inverted.png
+  font: false
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - navigation.footer
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: deep orange
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+#  - privacy:
+#      assets: true
+#      assets_fetch: true
+#      assets_fetch_dir: assets/external
+
+extra_css:
+  - style/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/pmoscode
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/pmoscode
+    - icon: fontawesome/regular/envelope
+      link: mailto:info@pmoscode.de
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+      - reject
+
+copyright: >
+  Copyright &copy; 2023 pmoscode –
+  <a href="#__consent">Change cookie settings</a>
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - admonition
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.superfences
