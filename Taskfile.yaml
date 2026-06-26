@@ -1,0 +1,7 @@
+version: 3
+
+tasks:
+  serve:
+    desc: Run local dev server
+    cmds:
+      - docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
